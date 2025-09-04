@@ -44,8 +44,16 @@
     .links i {
       vertical-align: middle;
     }
+    .iframe-box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      max-width: 800px;
+      margin-bottom: 30px;
+    }
     .search-box {
-      margin-bottom: 20px; /* Add some space below the search box */
+      margin-bottom: 20px;
     }
     .search-box input {
       padding: 10px;
@@ -83,19 +91,30 @@
  </div>
 
   <div class="iframe-box">
+    <!-- 第一個 Spotify 歌單 -->
     <iframe style="border-radius:12px" 
-        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUb0uBnlJuTi" 
-        width="100%" 
-        height="352" 
-        frameborder="0" 
-        allowfullscreen="" 
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-        loading="lazy">
-</iframe>
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUb0uBnlJuTi?utm_source=generator&theme=0" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+    </iframe>
+
+    <!-- 第二個 Spotify 歌單 -->
+    <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWY64wDtewQt?utm_source=generator&theme=0" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+    </iframe>
   </div>
 
   <div class="search-box">
-
     <form action="https://www.google.com/search" method="GET" target="_blank">
       <input type="text" name="q" placeholder="Search Google...">
     </form>
